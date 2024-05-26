@@ -14,10 +14,10 @@ def get_llm(model):
     llm=ChatNVIDIA(model=model)
     return llm
 
-def get_llm_response(human_mesage,model="ai-llama3-70b"):
+def get_llm_response(human_message,model="ai-mistral-7b-instruct-v2"):
     messages=[
         SystemMessage(content="You are chatbot assistant"),
-        HumanMessage(content=human_mesage)
+        HumanMessage(content=human_message)
     ]
     llm=get_llm(model)
     return llm.invoke(messages).content

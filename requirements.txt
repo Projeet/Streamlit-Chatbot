@@ -3,3 +3,4 @@ langchain-nvidia-ai-endpoints
 python-dotenv
 langchain-community
 langchain
+ipykernel
